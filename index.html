@@ -37,6 +37,29 @@
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
+		embedded_svc.settings.extraPrechatInfo = [{
+		  "entityFieldMaps": [{
+		    "doCreate":false,
+		    "doFind":true,
+		    "fieldName":"LastName",
+		    "isExactMatch":true,
+		    "label":"Last Name"
+		  }, {
+		    "doCreate":false,
+		    "doFind":true,
+		    "fieldName":"FirstName",
+		    "isExactMatch":true,
+		    "label":"First Name"
+		  }, {
+		    "doCreate":false,
+		    "doFind":true,
+		    "fieldName":"Email",
+		    "isExactMatch":true,
+		    "label":"Email"
+		  }],
+		  "entityName":"Contact"
+		}];
+
 		embedded_svc.init(
 			'https://czeigler-240109-1-demo.my.salesforce.com',
 			'https://czeigler-240109-1-demo.my.site.com/consumer',
